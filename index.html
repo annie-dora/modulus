@@ -90,7 +90,7 @@
 
 
     let result
-    var list = []
+    var memo = []
     function number(num){
         for (let i = 0; i < num; i++) {
             if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0){
@@ -117,12 +117,12 @@
         else{
             result = 1
         }
-        list.push(result)
+        memo.push(result)
         }
-        console.log(list)
+        console.log(memo)
         return
     }
-    number(list),
+    number(memo),
     number(100)
     
     </script>
